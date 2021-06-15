@@ -1,0 +1,76 @@
+
+body {
+    color: black;
+    background-color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
+}
+/* creando una columna para ubicar la barra de navegacion */
+#navbar {
+    position: fixed;
+    width: 20%; 
+    height: 96%;
+    border: solid 5px;
+    border-color: yellow;
+    border-radius: 10px;
+    margin-left: 2%;
+}
+/* estilo para los encabezados de las secciones */
+header {
+    color:darkblue;
+    background-color:yellow;
+    margin: 20px;
+    text-align: center;
+    font-size: 18pt;
+    
+}
+/* estilo para encabezado de la barra de navegacion */
+ #headernavbar{
+    color: red;
+    background-color:black;
+} 
+/* estilo opciones de barra de navegacion */
+#navbar ul {
+    height: 88%;
+    padding: 10%;
+    overflow-y: auto;
+    overflow-x: hidden;   
+}
+/* documento principal */
+#main-doc {
+    width: 72%; 
+    height: 100%;
+    border: solid 5px;
+    border-color: yellow;
+    border-radius: 10px;
+    color: black;
+    margin-left: 24%; /*alejado de la izquierda*/}
+
+p{
+    margin:5%;
+}
+
+code {
+    display: block;
+    text-align: left;
+    line-height: 5;
+    background-color:gray;
+    color:white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+li{
+    background-color: violet;
+}
+
+section li {
+    margin: 5%;
+}
+
+/* @media only screen and (max-width: 815px) {
+    #navbar ul {
+        border: 1px solid;
+        height: 100%;
+    } */
