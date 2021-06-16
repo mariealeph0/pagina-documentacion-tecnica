@@ -14,45 +14,87 @@
     <body>
         
         <nav id="navbar">
-        <header id="headernavbar">texto describiendo el tema de la documentacion tecnica</header>
+        <header id="headernavbar">Python 3.8.5 documentation</header>
         <ul>
-        <li><a class="nav-link" href="#seccion1">Seccion 1: </a></li>  <br>
-        <li><a class="nav-link" href="#seccion2">Seccion 2: </a></li>  <br>
-        <li><a class="nav-link" href="#seccion3">Seccion 3: </a></li> <br>
-        <li><a class="nav-link" href="#seccion4">Seccion 4: </a></li>  <br>
-        <li><a class="nav-link" href="#seccion5">Seccion 5: </a></li> <br>
+        <div><a class="nav-link" href="#introduction" style="color: white;">Introduction </a></div>  <br>
+        <div><a class="nav-link" href="#seccion2"> First Steps </a> </div> <br>
+        <div><a class="nav-link" href="#seccion3"> Numbers </a></div> <br>
+        <div><a class="nav-link" href="#seccion4"> String </a></div>  <br>
+        <div><a class="nav-link" href="#seccion5" > Lists </a></div> <br>
+        <div><a class="nav-link" href="#footer" > References </a></div> <br> <br> <br>
+        <img src="http://www.maestrosdelweb.com/images/2012/10/python-logo-master-flat.png" alt="logo-python">
         </ul>
         </nav>
         <main id="main-doc">
-            <section id="seccion1"class="main-section"><header>Texto que describe la seccion1</header>
-            <p>P1Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sequi beatae, obcaecati praesentium quasi quisquam!</p>
-            <p>P2Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor deserunt voluptatum aperiam, explicabo eius animi?</p>
-            <code>algo de codigo</code>
-            <li></li>
+            <section id="introduction"class="main-section"><header>Introduction to Python</header>
+            <p>Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.</p>
+            <p>The Python interpreter and the extensive standard library are freely available in source or binary form for all major platforms from the Python Web site, <a href="https://www.python.org/" target="_blank"> https://www.python.org/</a>, and may be freely distributed. The same site also contains distributions of and pointers to many free third party Python modules, programs and tools, and additional documentation.</p>
+            <code>$ python3.8 <br>
+                Python 3.8 (default, Sep 16 2015, 09:25:04)<br>
+                [GCC 4.8.2] on linux<br>
+                Type "help", "copyright", "credits" or "license" for more information.<br>
+                >>></code>
+            <li>Note: By default, Python source files are treated as encoded in UTF-8</li>
         </section>
-        <section id="seccion2" class="main-section"><header>Texto que describe la seccion2</header>
-            <p>P3Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor deserunt voluptatum aperiam, explicabo eius animi?</p>
-            <p>P4Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor deserunt voluptatum aperiam, explicabo eius animi?</p>
-            <code></code>
-            <li>linea</li>
+        <section id="seccion2" class="main-section"><header>First Steps </header>
+            <p>In the following examples, input and output are distinguished by the presence or absence of prompts (>>> and …): to repeat the example, you must type everything after the prompt, when the prompt appears; lines that do not begin with a prompt are output from the interpreter. Note that a secondary prompt on a line by itself in an example means you must type a blank line; this is used to end a multi-line command.</p>
+            <code>>>> s = 'supercalifragilisticexpialidocious'<br>
+                >>> len(s)
+                34</code>
+            <p>Many of the examples in this manual, even those entered at the interactive prompt, include comments. Comments in Python start with the hash character, #, and extend to the end of the physical line. A comment may appear at the start of a line or following whitespace or code, but not within a string literal. A hash character within a string literal is just a hash character. Since comments are to clarify code and are not interpreted by Python, they may be omitted when typing in examples. Some examples:</p>
+            <code># this is the first comment<br>
+                spam = 1  # and this is the second comment<br>
+                          # ... and now a third!<br>
+                text = "# This is not a comment because it's inside quotes." </code>
+            
         </section>
-        <section id="seccion3" class="main-section"><header>Texto que describe la seccion3</header>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor deserunt voluptatum aperiam, explicabo eius animi?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor deserunt voluptatum aperiam, explicabo eius animi?</p>
-            <code></code>
-            <li></li>
+        <section id="seccion3" class="main-section"><header>Python commands: Numbers</header>
+            <p>The interpreter acts as a simple calculator: you can type an expression at it and it will write the value. Expression syntax is straightforward: the operators +, -, * and / work just like in most other languages (for example, Pascal or C); parentheses (()) can be used for grouping. For example:</p>
+            <p>The integer numbers (e.g. 2, 4, 20) have type int, the ones with a fractional part (e.g. 5.0, 1.6) have type float. </p>
+            <code>>>> 2 + 2<br>
+                4 <br>
+                >>> 50 - 5*6<br>
+                20<br>
+                >>> (50 - 5*6) / 4<br>
+                5.0<br>
+                >>> 8 / 5  # division always returns a floating point number<br>
+                1.6
+            </code>
+            <li>With Python, it is possible to use the ** operator to calculate powers</li>
         </section>
-        <section id="seccion4" class="main-section"><header>Texto que describe la seccion4</header>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor deserunt voluptatum aperiam, explicabo eius animi?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor deserunt voluptatum aperiam, explicabo eius animi?</p>
-            <code></code>
-            <li></li>
+        <section id="seccion4" class="main-section"><header>Python commands: String</header>
+            <p>Besides numbers, Python can also manipulate strings, which can be expressed in several ways. They can be enclosed in single quotes ('...') or double quotes ("...") with the same result 2. \ can be used to escape quotes:</p>
+            <code>>>> 'spam eggs'  # single quotes<br>
+                'spam eggs'<br>
+                >>> 'doesn\'t'  # use \' to escape the single quote...<br>
+                "doesn't"<br>
+                >>> "doesn't"  # ...or use double quotes instead<br>
+                "doesn't"<br>
+                >>> '"Yes," they said.'<br>
+                '"Yes," they said.'<br>
+                >>> "\"Yes,\" they said."<br>
+                '"Yes," they said.'<br>
+                >>> '"Isn\'t," they said.'<br>
+                '"Isn\'t," they said.'</code>
+            <p>In the interactive interpreter, the output string is enclosed in quotes and special characters are escaped with backslashes. While this might sometimes look different from the input (the enclosing quotes could change), the two strings are equivalent. The string is enclosed in double quotes if the string contains a single quote and no double quotes, otherwise it is enclosed in single quotes. The print() function produces a more readable output, by omitting the enclosing quotes and by printing escaped and special characters.</p>
+            
+            <li>If you don’t want characters prefaced by \ to be interpreted as special characters, you can use raw strings by adding an r before the first quote</li>
         </section>
-        <section id="seccion5" class="main-section"><header>Texto que describe la seccion5</header>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor deserunt voluptatum aperiam, explicabo eius animi?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor deserunt voluptatum aperiam, explicabo eius animi?</p>
-            <code></code>
-            <li></li>
+        <section id="seccion5" class="main-section"><header>Python commands: Lists</header>
+            <p>Python knows a number of compound data types, used to group together other values. The most versatile is the list, which can be written as a list of comma-separated values (items) between square brackets. Lists might contain items of different types, but usually the items all have the same type.</p>
+            <p></p>
+            <code>>>> squares = [1, 4, 9, 16, 25] <br>
+                >>> squares <br>
+                [1, 4, 9, 16, 25]
+            </code>
+            <li>All slice operations return a new list containing the requested elements. This means that the following slice returns a shallow copy of the list: <br>
+                >>> squares[:] <br>
+                [1, 4, 9, 16, 25] <br>
+            </li>
+        </section>
+        <section id="footer" class="main-section"><header>References</header>
+            <li> Visit the official page: <a href="https://docs.python.org/release/3.8.5/index.html" target="_blank"> https://docs.python.org/release/3.8.5/index.html
+            </a></li>        
         </section>
     </main>
     </body>
